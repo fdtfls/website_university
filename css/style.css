@@ -1,0 +1,120 @@
+body {
+      font-family: Poppins;
+      font-size: 14;
+      color: #fff;
+      background: #000;   
+}
+
+#featured_images {
+      position: relative;
+      background: url("../img/mountain.png") center/cover no-repeat;
+      width: 1440px;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 40px;
+    }
+
+.contentik {
+      max-width: 300px;
+      text-align: left;
+      margin-bottom: 100px;
+    }
+
+.contentik h3 {
+      font-family: Poppins;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+.contentik p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #c0c0c0;
+    }
+
+.footer {
+      position: absolute;
+      margin-top: 544px;
+      margin-bottom: 40px;
+      margin-left: 1144px;
+      display: flex;
+      gap: 16px;
+      font-size: 12px;
+      opacity: 0.9;
+    }
+.footer span {
+      color: #fff;
+      display: flex;
+      align-items: center;
+     
+    }
+#gear_cage {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* левая половина + правая половина */
+  flex: 1;
+  position: relative;
+  width: 1440 px;
+  height: 540px;
+}
+#gear_cage .left {
+  background-color: #000; 
+}
+#gear_cage .right {
+  background: url("../img/frame.png") center/cover no-repeat; 
+}
+.text-block {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px;
+    }
+.text-block h3 {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: #c0c0c0;
+    }
+.text-block h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+.text-block p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #fff;
+      margin-bottom: 30px;
+      max-width: 500px;
+    }
+ .btn {
+  font-family: "Poppins";
+  font-size: "15px";
+  font-weight: 400;
+  width: 152px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  border: none;
+  border-radius: 14px;
+}
+
+.btn .circle {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%; 
+  background: #000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 4px;
+  margin-right: 0;
+}
