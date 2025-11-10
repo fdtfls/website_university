@@ -1,62 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <title>Sunset at Mount Fuji</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-    <section id="featured_images">
-        <div class="contentik">
-            <h3>Sunset at Mount Fuji</h3>
-            <p>Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
-        </div>
+  <!-- Relative позиционирование с фоновым изображением, display: flex для выравнивания содержимого справа. -->
+  <section class="sunset-at-mount" id="featured">
+    <!-- text-align: left. -->
+    <div class="featured-image fade-in">
+      <p class="featured-image__subtitle">SUNSET AT MOUNT FUJI</p>
+      <p class="featured-image__text">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis
+        risus
+        egestas non.</p>
+    </div>
 
-        <div class="footer">
-            <img src="img/clock.png" alt="clock">
-            <span>1"</span>
-            <img src="img/round.png" alt="round">
-            <span>f/16</span>
-            <img src="img/iso.png" alt="iso">
-            <span>400</span>
-            <img src="img/location.png" alt="location">
-            <span>Japan</span>
-        </div>
-    </section>
-    <section id="gear_cage">
-        <div class="left">
-            <div class="text-block">
-                <h3>The Gear Cage</h3>
-                <h1>The tools that we use.</h1>
-                <p>
-                    The say that "no place is boring if you've had a good night's sleep and
-                    have a pocket full of unexposed film". While we don't shoot (a lot) of film
-                    these days — these are the tools that we actually use everyday to capture
-                    the amazing things around us.
-                </p>
-      
-                <a href="#" class="btn">
-            <span class="circle"></span>
-            Check it out
-          </a>
+    <nav class="icons-nav">
+      <ul class="icons-nav__list">
+        <li class="icons-nav__item">
+          <img src="img/icon_clock.svg" height="16px" width="16px" />
+          <p class="icons-nav__value">1''</p>
+        </li>
+        <li class="icons-nav__item">
+          <img src="img/icon_focus.svg" height="16px" width="16px" />
+          <p class="icons-nav__value">f/16</p>
+        </li>
+        <li class="icons-nav__item">
+          <img src="img/icon_iso.svg" height="16px" width="32px" />
+          <p class="icons-nav__value">400</p>
+        </li>
+        <li class="icons-nav__item">
+          <img src="img/icon_mark.svg" height="16px" width="10px" />
+          <p class="icons-nav__value">Japan</p>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <!-- Grid с двумя колонками, для разделения на левую и правую части. -->
+  <section class="the-gear-cage" id="gear">
+    <!-- Левая часть - background-color: #000 для темного фона. -->
+    <div class="the-gear-cage__left">
+      <!-- flex-direction: column, text-align: left для выравнивания текста слева. -->
+      <div class="left fade-in">
+        <h5 class="left__subtitle">THE GEAR CAGE</h5>
+        <h4 class="left__title">The tools that we use.</h4>
+        <p class="left__text">
+          The say that "no place is boring if you've had a good night's sleep and
+          have a pocket full of unexposed film". While we don't shoot (a lot) of film
+          these days — these are the tools that we actually use everyday to capture
+          the amazing things around us.
+        </p>
 
-              
-            </div>
-        </div>
-        <div class="right">
-           
-        </div>
-        </div>
-    </section>
+        <button type="button" class="btn">
+          <span class="btn__circle"></span>
+          Check it out
+        </button>
+      </div>
+    </div>
+    <div class="the-gear-cage__right">
+      <nav class="icons-nav">
+        <ul class="icons-nav__list">
+          <li class="icons-nav__item">
+            <img src="img/icon_clock.svg" height="16px" width="16px" />
+            <p class="icons-nav__value">0,8''</p>
+          </li>
+          <li class="icons-nav__item">
+            <img src="img/icon_focus.svg" height="16px" width="16px" />
+            <p class="icons-nav__value">f/5,6</p>
+          </li>
+          <li class="icons-nav__item">
+            <img src="img/icon_iso.svg" height="16px" width="32px" />
+            <p class="icons-nav__value">100</p>
+          </li>
+          <li class="icons-nav__item">
+            <img src="img/icon_mark.svg" height="16px" width="10px" />
+            <p class="icons-nav__value">Sweden</p>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
 </body>
 
 </html>
-
